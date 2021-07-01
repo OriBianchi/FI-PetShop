@@ -6,106 +6,150 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="https://kit.fontawesome.com/70f1ebb188.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <!-- Top bar -->
-        <div id="TopBar">
-            <span> Grandes ofertas en comederos </span>
-            <span> Español </span> <span>ARG$</span>
-            <br>
-            <h1><img src="./img/Logo/Cat.png" alt="Logo Gato"> CatnDog <img src="./img/Logo/Dog.png" alt="Logo Gato">
-            </h1>
+        <div class="TopBar">
+    
+            <!-- Message of the Day-->
+            <div class="MOTD-Container">
+                <span class="MOTD"> Envío gratis para pedidos mayores a 1500$!         Grandes ofertas en comederos - 50% OFF por este fin de semana en todos los juguetes</span>
+            </div>
+            <!-- TopBar Buttons -->
+            <ul class="Buttons">
+                <li>Español</li>
+                <li>$ARG</li>
+            </ul>
         </div>
-
-
-        <!-- DUDA: La navegacion tiene que ir en una lista, incluso aunque se encuentra en misma linea? -->
-
-        <!-- Navegacion -->
-        <div id="NavGeneral">
+    
+        <!-- Container -->
+        <div class="header-container">
+            <!-- Barra de Navegacion -->
+            <!-- Logo -->
+            <div class="Logo">
+                    <img src="./img/Logo/Cat.png" alt="Logo Gato">
+                    <h1><span class="Front">Front</span><span class="CatnDog">Cat&Dog</span></h1>
+                    <img src="./img/Logo/Dog.png" alt="Logo Gato">
+            </div>
+        
+            <!-- Navegacion -->
             <nav>
-                <span>
-                    <ul style="list-style: none;">
-                        <li><img src="./img/Icons/IconPawprint.png" alt="Icono Patita"> <a
-                                href="./recetas_dulces.html">Recetas
-                                Dulces</a></li>
-                        <li><img src="./img/Icons/IconPawprint.png" alt="Icono Patita"> <a
-                                href="./recetas_saladas.html">Recetas
-                                Saladas</a></li>
-                        <li><img src="./img/Icons/IconPawprint.png" alt="Icono Patita"> <a
-                                href="./contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </span>
-            </nav>
+                <ul style="list-style: none;">
+                    <li><a href="#"> <i class="fas fa-paw"></i> Categorias</a></li>
+                    <li><a href="#"> <i class="fas fa-paw"></i> Pets</a></li>
+                    <li><a href="#"> <i class="fas fa-paw"></i> Nosotros</a></li>
+                    <li><a href="#"> <i class="fas fa-paw"></i> Contactanos</a>
+                    </li>
+                </ul>
+        
         </div>
-
-        <hr>
-
     </header>
 
     <main>
-        <section id="Heroe">
-
-            <img src="./img/Body/Heroe.png" alt="Heroe">
-
-            <!-- Bienvenida /// DUDA: Esto es correcto??? -->
-            <div id="Bienvenida">
+        <!-- Heroe  -->
+        <section class="Heroe">
+            <!-- Bienvenida  -->
+            <div class="Bienvenida">
                 <h2>¡Es un placer tenerte aquí!</h2>
                 <br>
-                <h3> ¡Comederos en descuento! </h3>
-                <h3> COMEDEROS </h3>
+                <p> ¡Comederos en descuento! </p>
+                <br>
+                <br>
+                <span class="Heroe-Button"> <a href="#"> COMEDEROS </a> </span>
             </div>
 
         </section>
 
-        <section id="Cuerpo">
-
+        <!-- Cuerpo  -->
+        <section class="Cuerpo">
             <!-- Navegacion de Productos-->
-            <div id="NavProductos">
+            <div class="NavProductos">
                 <img src="img/Icons/IconPawprintGde.png">
-                <br>
                 <h2> Productos Destacados </h2>
-                <br>
                 <p>
                     <a href="">Accesorios</a>
                     <a href="">Comederos</a>
                     <a href="">Comida</a>
                 </p>
             </div>
-
+        
             <!-- Cards -->
-            <div>
-                <img src="./img/Body/Churrasco.png" alt="Imagen Churrasco"><br>
-                <p> Juguete Churrasquito</p>
-                <p> $150 </p>
-            </div>
-
-            <div>
-                <img src="./img/Body/Comedero.png" alt="Imagen Comedero"><br>
-                <p> Comedero para Perro</p>
-                <p> $250 </p>
-            </div>
-
-            <div>
-                <img src="./img/Body/Huesito.png" alt="Imagen Hueso de Juguete"><br>
-                <p> Juguete Huesito</p>
-                <p> $650 </p>
-            </div>
+            <article class="Product-Cards">
+                <div class="ProductCard">
+                    <img src="./img/Body/Churrasco.png" alt="Imagen Churrasco"><br>
+                    <p class="titulo"> Juguete Churrasquito</p>
+                    <p class="precio"> $150 </p>
+                </div>
+        
+                <div class="ProductCard">
+                    <img src="./img/Body/Comedero.png" alt="Imagen Comedero"><br>
+                    <p class="titulo"> Comedero para Perro</p>
+                    <p class="precio"> $250 </p>
+                </div>
+        
+                <div class="ProductCard">
+                    <img src="./img/Body/Huesito.png" alt="Imagen Hueso de Juguete"><br>
+                    <p class="titulo"> Juguete Huesito</p>
+                    <p class="precio"> $650 </p>
+                </div>
+            </article>
+    
         </section>
 
-        <section id="Form">
+        <section class="Form">
             <!-- Forms -->
-            <div>
-                <p>Espacio para forms</p>
-            </div>
+                <h2>Contactanos</h2>
+                <p>Espacio reservado para Forms</p>
         </section>
     </main>
 
     <footer>
-        <hr>
-        <p style="text-align: center;">Todos los derechos reservados</p>
+            <section class="footerTop">
+                <i class="far fa-envelope fa-lg"></i>
+                <span>Suscribete para mas novedades</span>
+            </section>
+
+            <section class="footerBody">
+                <div class="contact">
+                    <ul>
+                        <li> 
+                            <span class="fa-stack fa-2x">
+                                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                <i class="fas fa-map-marker-alt fa-inverse"></i> 
+                            </span>
+                            Localidad
+                        </li>
+                        <li>
+                            <span class="fa-stack fa-2x"></span>
+                                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                <i class="fas fa-phone-alt dotIcon"></i>
+                            </span>
+                             Telefono
+                        </li>
+                        <li>
+                            <span class="fa-stack fa-2x"></span>
+                                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                <i class="far fa-envelope fa-2x dotIcon"></i>
+                            </span>
+                            Correo Electronico
+                        </li>
+                    </ul>
+                </div>
+                <div class="adv">
+
+                </div>
+                <div class="logo">
+
+                </div>
+            </section>
+
+            <section class="footerBottom">
+                <span>Todos los derechos reservados</span>
+            </section>
     </footer>
 </body>
 
